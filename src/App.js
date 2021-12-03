@@ -12,9 +12,12 @@ const App = () => {
   const handleLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
   };
+  console.log(process.env.API_KEY);
   return (
     <Suspense fallback="loading">
-      <h1 className="text-red-400">React App - Serempres</h1>
+      <h1 className="text-red-400">
+        React App - Serempres {process.env.API_KEY}
+      </h1>
       <p>{t("Welcome to React")}</p>
 
       <select onChange={handleLanguage}>
