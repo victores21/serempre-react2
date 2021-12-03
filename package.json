@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --open --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
+    "dev": "npm run watch:css && webpack-dev-server --hot --open --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/output.css"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +25,11 @@
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
   }
 }

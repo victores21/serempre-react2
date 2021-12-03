@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles/app.css";
-import imagen from "./img/prueba.jpg";
+//Tailwinds
+import "./styles/output.css";
 
 const App = () => {
   return (
     <div>
-      <h1 className="hello">React App - Serempres</h1>
+      <h1 className="text-red-700">React App - Serempres</h1>
     </div>
   );
 };
