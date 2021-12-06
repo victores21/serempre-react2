@@ -18,7 +18,7 @@ const LanguageSelector = () => {
     <select
       onChange={handleLanguage}
       value={defaultLang}
-      className="w-96 h-8 rounded mt-8"
+      className="w-96 h-8 rounded mt-8 max-w-full"
     >
       <option value="en">English </option>
       <option value="es">Español</option>
