@@ -1,6 +1,6 @@
 #Plantilla de ReactJS - Serempre
 
-#Tecnologías:
+# Tecnologías:
 
 - Babel
 - Dotenv
@@ -11,7 +11,7 @@
 - TailwindCSS
 - PostCSS
 
-#Instalación
+# Instalación
 
 1. Clonar el proyecto
 
