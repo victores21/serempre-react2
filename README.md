@@ -1,4 +1,4 @@
-#Plantilla de ReactJS - Serempre
+# Plantilla de ReactJS - Serempre
 
 # Tecnologías:
 
