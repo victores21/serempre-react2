@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import SerempreLogo from "./img/serempre-logo.svg";
+import { Button } from "./views/components/StyledButton";
 //Tailwinds
 import "./styles/output.css";
 
@@ -20,6 +21,7 @@ const App = () => {
         <p className="text-lg text-white text-center">
           {t("Welcome to React")}
         </p>
+        <Button className="mt-5"> Styled component </Button>
         <LanguageSelector />
       </div>
     </Suspense>
