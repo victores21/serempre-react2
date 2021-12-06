@@ -1,29 +1,27 @@
 import React, { Suspense } from "react";
-
+import SerempreLogo from "./img/serempre-logo.svg";
 //Tailwinds
 import "./styles/output.css";
 
 //i18n
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./views/components/LanguageSelector/LanguageSelector";
 
 const App = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const handleLanguage = (e) => {
-    i18n.changeLanguage(e.target.value);
-  };
-  console.log(process.env.API_KEY);
   return (
     <Suspense fallback="loading">
-      <h1 className="text-red-400">
-        React App - Serempres {process.env.API_KEY}
-      </h1>
-      <p>{t("Welcome to React")}</p>
-
-      <select onChange={handleLanguage}>
-        <option value="en">English</option>
-        <option value="es">Español</option>
-      </select>
+      <div className="min-h-screen bg-blue-900  h-full flex justify-center items-center flex-col">
+        <img src={SerempreLogo} className="w-full max-w-xl	mb-8" />{" "}
+        <h1 className="text-white  font-bold mb-3 text-3xl text-center">
+          {t("Template title")}
+        </h1>
+        <p className="text-lg text-white text-center">
+          {t("Welcome to React")}
+        </p>
+        {/* <LanguageSelector /> */}
+      </div>
     </Suspense>
   );
 };
