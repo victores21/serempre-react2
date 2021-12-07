@@ -1,12 +1,21 @@
-import React, { Suspense } from "react";
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 //i18n
 
 import useViews from "./views";
 
 const App = () => {
   const { Home } = useViews();
-  return <Home />;
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/profile" element={<Home />} />
+        </Routes>
+      </Router>
+    </>
+  );
 };
 
 export default App;
