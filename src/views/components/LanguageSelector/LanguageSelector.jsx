@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
+
+import useControllers from "../../../controllers";
 
 const LanguageSelector = () => {
   //Dentro de controllers
-  const { t, i18n } = useTranslation();
 
-  const [defaultLang, setDefaultLang] = useState(document.documentElement.lang);
+  const { useComponentControllers } = useControllers();
+  const { useLanguageSelector } = useComponentControllers();
+  const { defaultLang, handleLanguage } = useLanguageSelector();
 
-  const handleLanguage = (e) => {
-    i18n.changeLanguage(e.target.value);
-    setDefaultLang(e.target.value);
-  };
-  //Dentro controllers
   return (
     <select
       onChange={handleLanguage}
