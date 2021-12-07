@@ -16,6 +16,8 @@
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-twin": "^1.0.2",
     "css-loader": "^6.5.1",
     "dotenv": "^10.0.0",
     "dotenv-webpack": "^7.0.3",
@@ -28,6 +30,7 @@
     "react-i18next": "^11.14.3",
     "style-loader": "^3.3.1",
     "styled-components": "^5.3.3",
+    "twin.macro": "^2.8.1",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"

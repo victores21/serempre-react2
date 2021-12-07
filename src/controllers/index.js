@@ -1,4 +1,3 @@
-import React from "react";
 import useComponentControllers from "./components";
 
 const useControllers = () => {

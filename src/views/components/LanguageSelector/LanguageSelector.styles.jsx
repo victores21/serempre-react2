@@ -1,19 +1,8 @@
 import styles from "styled-components";
+import tw from "twin.macro";
 
-export const Button = styles.button`
-    background: none;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    padding:1rem;
-    font-size:16px;
-    font-weight:500;
-    color:#fff;
-    
-
-    &:hover{
-        background:#fff;
-        border:1px solid #fff;
-        transition: 0.3s all ease;
-        color: #1E3A8A;
-    }
+export const StyledLanguageSelector = styles.select.attrs({
+  className: "styled-language-selector",
+})`
+    ${tw`w-96 h-8 rounded mt-8 max-w-full`}
 `;
