@@ -6,12 +6,12 @@ import useViews from "./views";
 
 const App = () => {
   const { Home } = useViews();
+
   return (
     <>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/profile" element={<Home />} />
         </Routes>
       </Router>
     </>
