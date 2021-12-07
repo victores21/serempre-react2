@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
-import useControllers from "../../../controllers";
+// import useControllers from "../../../controllers";
+import useComponentHooks from "../../../controllers/componentsHooks";
 import { StyledLanguageSelector } from "./LanguageSelector.styles";
 
 const LanguageSelector = () => {
   // Controllers Hooks
-  const { useComponentControllers } = useControllers();
-  const { useLanguageSelector } = useComponentControllers();
+  // const { useComponentsHooks } = useControllers();
+  const { useLanguageSelector } = useComponentHooks();
   const { defaultLang, handleLanguage } = useLanguageSelector();
 
   return (

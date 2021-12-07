@@ -1,7 +1,7 @@
 import Home from "./view/Home";
 
-const useViews = () => {
+const useView = () => {
   return { Home };
 };
 
-export default useViews;
+export default useView;

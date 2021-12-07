@@ -1,8 +1,8 @@
-import useComponentControllers from "./components";
+import useComponentsHooks from "./componentsHooks";
 
 const useControllers = () => {
   return {
-    useComponentControllers,
+    useComponentsHooks,
   };
 };
 
