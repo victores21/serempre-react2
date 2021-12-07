@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const LanguageSelector = () => {
+  //Dentro de controllers
   const { t, i18n } = useTranslation();
 
   const [defaultLang, setDefaultLang] = useState(document.documentElement.lang);
@@ -10,7 +11,7 @@ const LanguageSelector = () => {
     i18n.changeLanguage(e.target.value);
     setDefaultLang(e.target.value);
   };
-
+  //Dentro controllers
   return (
     <select
       onChange={handleLanguage}

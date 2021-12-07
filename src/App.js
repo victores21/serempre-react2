@@ -1,31 +1,12 @@
 import React, { Suspense } from "react";
-import SerempreLogo from "./img/serempre-logo.svg";
-import { Button } from "./views/components/StyledButton";
-//Tailwinds
-import "./styles/output.css";
 
 //i18n
-import { useTranslation } from "react-i18next";
-import LanguageSelector from "./views/components/LanguageSelector/LanguageSelector";
+
+import useViews from "./views";
 
 const App = () => {
-  const { t } = useTranslation();
-
-  return (
-    <Suspense fallback="loading">
-      <div className="min-h-screen bg-blue-900  h-full flex justify-center items-center flex-col px-3">
-        <img src={SerempreLogo} className="w-full max-w-xl	mb-8" />{" "}
-        <h1 className="text-white  font-bold mb-3 text-3xl text-center">
-          {t("Template title")}
-        </h1>
-        <p className="text-lg text-white text-center">
-          {t("Welcome to React")}
-        </p>
-        <Button className="mt-5"> Styled component </Button>
-        <LanguageSelector />
-      </div>
-    </Suspense>
-  );
+  const { Home } = useViews();
+  return <Home />;
 };
 
 export default App;
