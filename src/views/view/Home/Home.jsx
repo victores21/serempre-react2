@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import SerempreLogo from "../../../img/serempre-logo.svg";
+import SerempreLogo from "../../../assets/img/serempre-logo.svg";
 import useComponents from "../../components/index";
 import { useTranslation } from "react-i18next";
 
@@ -17,7 +17,9 @@ export const Home = () => {
         <p className="text-lg text-white text-center">
           {t("Welcome to React")}
         </p>
-        <h1>{process.env.API_KEY}</h1>
+        <p className="text-lg text-white text-center">
+          Enviroment Variable <b>{process.env.API_KEY}</b>
+        </p>
         <LanguageSelector />
       </div>
     </Suspense>

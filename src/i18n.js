@@ -1,8 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import lan_es from "./translations/es/global.json";
-import lan_en from "./translations/en/global.json";
+import lan_es from "./assets/translations/es/global.json";
+import lan_en from "./assets/translations/en/global.json";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next,
